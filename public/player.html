@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Quiz Boda A- Jugador</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Boda Ana & Judith</h1>
+
+        <div id="join-section">
+            <h2>Nombre Jugador</h2>
+            <input id="name-input" placeholder="Introduce tu nombre" />
+            <button id="join-btn">Unirse al juego</button>
+        </div>
+
+        <div id="game-section" style="display:none;">
+            <h2 id="question-text"></h2>
+            <ul id="answers-list"></ul>
+            <div id="timer">Tiempo: <span id="time-left">15</span>s</div>
+        </div>
+
+        <div id="result" style="display:none;">
+            <h3>Gracias por jugar 🎉</h3>
+            <p>Espera a que termine el juego.</p>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="player.js"></script>
+</body>
+
+</html>

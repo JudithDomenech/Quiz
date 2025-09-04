@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fef6e4;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px 10px;
+}
+
+.container {
+  
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #d94f4f;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+h1:last-of-type {
+    margin-bottom: 15px;
+    /* Solo el último h1 tiene espacio debajo */
+}
+
+button {
+    background-color: #be3131;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 300px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #be3131;
+}
+
+input#name-input {
+    font-size: 1.1rem;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+ul li {
+    background: #ffe5e5;
+    margin: 8px 0;
+    padding: 15px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+    user-select: none;
+    /* para que no se seleccione texto al tocar */
+}
+
+ul li:hover {
+    background: #f1c0c0;
+}
+
+ul li.selected {
+    background: #d94f4f;
+    color: white;
+    font-weight: bold;
+}
+
+#timer {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: #d94f4f;
+    font-weight: bold;
+}
+
+#result h3 {
+    font-size: 1.5rem;
+}
+
+#result p {
+    font-size: 1.1rem;
+}

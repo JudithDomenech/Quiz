@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Quiz Boda Anfitrión</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Boda Ana & Judith</h1>
+
+        <div id="qr-section">
+            <p>Escanea el QR para unirte con tu móvil:</p>
+            <img id="qr" alt="QR code" />
+        </div>
+
+        <button id="next-question-btn">Siguiente Pregunta</button>
+
+        <div id="question-section" style="display:none;">
+            <h2 id="question-text"></h2>
+            <ul id="answers-list"></ul>
+        </div>
+
+        <h3>Jugadores conectados:</h3>
+        <ul id="players-list"></ul>
+
+    </div>
+
+    <h3>Ranking (entre preguntas):</h3>
+    <ol id="ranking-list" style="display:none;"></ol>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>
